@@ -28,6 +28,7 @@ h2{
   font-size: 23px;
 }
 ul {
+  margin-left: 25px;
   list-style-type: disc;
 }
 ul ul {
