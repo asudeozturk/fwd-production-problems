@@ -45,8 +45,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     height: 50vw;
   }
   #three {
-    width: 100vw;  
+    width: 100vw;
     height: 50vw;
+  }
+  #content {
+    /* flex-direction: row-reverse - change direction from column to row */
+    /* flex-wrap: wrap-reverse - wrap onto multiple lines from bottom to top */
+    flex-flow: row-reverse wrap-reverse;
   }
 }
 
