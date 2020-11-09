@@ -39,7 +39,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 600px) {
-
+  #one,
+  #two {
+    width: 50vw;
+    height: 50vw;
+  }
 }
 
 @media screen and (min-width: 800px) {
