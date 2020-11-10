@@ -56,5 +56,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 800px) {
-
+  #one,
+  #two,
+  #three {
+    width: 30vw;
+    height: 30vw;
+  }
 }
