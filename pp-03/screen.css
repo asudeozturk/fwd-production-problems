@@ -29,14 +29,14 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ==== LAYOUT STYLES ==== */
 #content {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: column-reverse; /* fix the order of the sections */
 }
 
 #three,
 #two,
 #one {
-  height: 100vw;
-  display: flex;            /* to center the text inside the box */
+  height: 100vw; /* height=full width of the viewport (square) */
+  display: flex; /* to center the text inside the box */
   align-items: center;
   justify-content: center;
 }
@@ -45,12 +45,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 @media screen and (min-width: 600px) {
   #one,
   #two {
-    width: 50vw;
-    height: 50vw;
+    width: 50vw;  /* half width*/
+    height: 50vw; /* height=half width of viewport (square) */
   }
   #three {
-    width: 100vw;
-    height: 50vw;
+    width: 100vw; /* full width*/
+    height: 50vw; /* height=half width of viewport (square) */
   }
   #content {
     /* flex-direction: row-reverse - change direction from column to row */
@@ -63,10 +63,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
   #one,
   #two,
   #three {
-    width: 30vw;
-    height: 30vw;
+    width: 30vw; /* 30/100 of viewport width */
+    height: 30vw; /* height=30/100 of viewport width (square) */
   }
   #content {
-    justify-content: space-between;
+    justify-content: space-between; /* spread the boxes equally */
   }
 }
