@@ -36,7 +36,11 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #two,
 #one {
   height: 100vw;
+  display: flex;            /* to center the text inside the box */
+  align-items: center;
+  justify-content: center;
 }
+
 
 @media screen and (min-width: 600px) {
   #one,
