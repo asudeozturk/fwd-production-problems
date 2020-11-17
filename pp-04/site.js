@@ -4,8 +4,7 @@
   `x` as the variable inside the function, however.
 */
 
-/*Comment out to test Step 2 */
-/*var x = 5;
+var x = 5;
 
 function double(num) {
   let x = num * 2;
@@ -13,7 +12,7 @@ function double(num) {
 }
 
 double(6);
-console.log('The value of x is', x, '-- it should be 5.');*/
+console.log('The value of x is', x, '-- it should be 5.');
 
 /*
   Step 2. Rewrite the JavaScript `double()` function above so that
@@ -25,8 +24,8 @@ console.log('The value of x is', x, '-- it should be 5.');*/
   can accurately test your work.
 */
 
-/*Comment out to test Step 3 */
-/*(function() {
+
+(function() {
   var x=5;
 
   function double(num) {
@@ -38,7 +37,7 @@ console.log('The value of x is', x, '-- it should be 5.');*/
   console.log('The value of x is', x, '-- it should be 5.');
 
 })();
-*/
+
 /*
   Step 3. Rewrite your corrected `double()` function from Step 2.
   so that non-number values passed into the function are handled
@@ -61,5 +60,7 @@ console.log('The value of x is', x, '-- it should be 5.');*/
 
   double(6);
   console.log('The value of x is', x, '-- it should be 5.');
-
+  console.log('Test1: double(6) is ', double(6), '-- it should be 12.');
+  console.log('Test2: double(x) is ', double(x), '-- it should be 10.');
+  console.log('Test3: double(\'xyz\') is ', double('xyz'), '-- it should be xyz is not a number.');
 })();
